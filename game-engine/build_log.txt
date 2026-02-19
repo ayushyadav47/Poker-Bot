@@ -1,0 +1,4 @@
+﻿-- Selecting Windows SDK version 10.0.22000.0 to target Windows 10.0.26100.
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/Eng/code/Poker Bot/game-engine/build

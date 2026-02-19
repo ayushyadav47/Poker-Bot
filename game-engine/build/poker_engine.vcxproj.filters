@@ -1,19 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\Eng\code\Poker Bot\game-engine\src\card.cpp">
+    <ClCompile Include="D:\Eng\code\Poker Bot\game-engine\src\Card.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Eng\code\Poker Bot\game-engine\src\deck.cpp">
+    <ClCompile Include="D:\Eng\code\Poker Bot\game-engine\src\Action.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Eng\code\Poker Bot\game-engine\src\action.cpp">
+    <ClCompile Include="D:\Eng\code\Poker Bot\game-engine\src\Deck.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Eng\code\Poker Bot\game-engine\src\game_state.cpp">
+    <ClCompile Include="D:\Eng\code\Poker Bot\game-engine\src\Player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Eng\code\Poker Bot\game-engine\src\hand_evaluator.cpp">
+    <ClCompile Include="D:\Eng\code\Poker Bot\game-engine\src\Pot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Eng\code\Poker Bot\game-engine\src\BettingRound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Eng\code\Poker Bot\game-engine\src\GameState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Eng\code\Poker Bot\game-engine\src\HandEvaluator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Eng\code\Poker Bot\game-engine\src\RuleEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Eng\code\Poker Bot\game-engine\src\PokerEngine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

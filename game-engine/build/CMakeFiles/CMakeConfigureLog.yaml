@@ -35,8 +35,6 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "c:\\Users\\Ayush\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\Ayush\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files (x86)\\Razer Chroma SDK\\bin"
         - "C:\\Program Files\\Razer Chroma SDK\\bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
@@ -65,18 +63,6 @@ events:
         - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\Ayush\\.pyenv\\pyenv-win\\bin"
-        - "C:\\Users\\Ayush\\.pyenv\\pyenv-win\\shims"
-        - "C:\\Users\\Ayush\\.cargo\\bin"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\Intel\\WiFi\\bin\\"
-        - "C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\MinGW\\bin"
-        - "C:\\MinGW"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Ayush\\AppData\\Local\\PowerToys\\"
         - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\Antigravity\\bin"
   -
@@ -95,7 +81,7 @@ events:
       The output was:
       0
       MSBuild version 17.11.2+c078802d4 for .NET Framework
-      Build started 06-02-2026 14:21:55.
+      Build started 20-02-2026 00:46:22.
       
       Project "D:\\Eng\\code\\Poker Bot\\game-engine\\build\\CMakeFiles\\4.2.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -124,7 +110,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.66
+      Time Elapsed 00:00:00.40
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -157,8 +143,6 @@ events:
       - "link"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files (x86)/Razer Chroma SDK/bin/"
       - "C:/Program Files/Razer Chroma SDK/bin/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
@@ -193,8 +177,6 @@ events:
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/link.exe"
     search_context:
       ENV{PATH}:
-        - "c:\\Users\\Ayush\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\Ayush\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files (x86)\\Razer Chroma SDK\\bin"
         - "C:\\Program Files\\Razer Chroma SDK\\bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
@@ -223,18 +205,6 @@ events:
         - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\Ayush\\.pyenv\\pyenv-win\\bin"
-        - "C:\\Users\\Ayush\\.pyenv\\pyenv-win\\shims"
-        - "C:\\Users\\Ayush\\.cargo\\bin"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\Intel\\WiFi\\bin\\"
-        - "C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\MinGW\\bin"
-        - "C:\\MinGW"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Ayush\\AppData\\Local\\PowerToys\\"
         - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\Antigravity\\bin"
   -
@@ -260,8 +230,6 @@ events:
       - "lld-link"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files (x86)/Razer Chroma SDK/bin/"
       - "C:/Program Files/Razer Chroma SDK/bin/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
@@ -295,12 +263,6 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/lld-link.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/lld-link"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.com"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.exe"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link"
       - "C:/Program Files (x86)/Razer Chroma SDK/bin/lld-link.com"
       - "C:/Program Files (x86)/Razer Chroma SDK/bin/lld-link.exe"
       - "C:/Program Files (x86)/Razer Chroma SDK/bin/lld-link"
@@ -391,8 +353,6 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "c:\\Users\\Ayush\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\Ayush\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files (x86)\\Razer Chroma SDK\\bin"
         - "C:\\Program Files\\Razer Chroma SDK\\bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
@@ -421,18 +381,6 @@ events:
         - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\Ayush\\.pyenv\\pyenv-win\\bin"
-        - "C:\\Users\\Ayush\\.pyenv\\pyenv-win\\shims"
-        - "C:\\Users\\Ayush\\.cargo\\bin"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\Intel\\WiFi\\bin\\"
-        - "C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\MinGW\\bin"
-        - "C:\\MinGW"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Ayush\\AppData\\Local\\PowerToys\\"
         - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\Antigravity\\bin"
   -
@@ -456,8 +404,6 @@ events:
       - "link"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files (x86)/Razer Chroma SDK/bin/"
       - "C:/Program Files/Razer Chroma SDK/bin/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
@@ -492,8 +438,6 @@ events:
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/link.exe"
     search_context:
       ENV{PATH}:
-        - "c:\\Users\\Ayush\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\Ayush\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files (x86)\\Razer Chroma SDK\\bin"
         - "C:\\Program Files\\Razer Chroma SDK\\bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
@@ -522,18 +466,6 @@ events:
         - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\Ayush\\.pyenv\\pyenv-win\\bin"
-        - "C:\\Users\\Ayush\\.pyenv\\pyenv-win\\shims"
-        - "C:\\Users\\Ayush\\.cargo\\bin"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\Intel\\WiFi\\bin\\"
-        - "C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\MinGW\\bin"
-        - "C:\\MinGW"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Ayush\\AppData\\Local\\PowerToys\\"
         - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\Antigravity\\bin"
   -
@@ -557,8 +489,6 @@ events:
       - "mt"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files (x86)/Razer Chroma SDK/bin/"
       - "C:/Program Files/Razer Chroma SDK/bin/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
@@ -592,12 +522,6 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/mt.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/mt.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/mt"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.com"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.exe"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/mt.com"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/mt.exe"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/mt"
       - "C:/Program Files (x86)/Razer Chroma SDK/bin/mt.com"
       - "C:/Program Files (x86)/Razer Chroma SDK/bin/mt.exe"
       - "C:/Program Files (x86)/Razer Chroma SDK/bin/mt"
@@ -688,8 +612,6 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "c:\\Users\\Ayush\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\Ayush\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files (x86)\\Razer Chroma SDK\\bin"
         - "C:\\Program Files\\Razer Chroma SDK\\bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
@@ -718,18 +640,6 @@ events:
         - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\Ayush\\.pyenv\\pyenv-win\\bin"
-        - "C:\\Users\\Ayush\\.pyenv\\pyenv-win\\shims"
-        - "C:\\Users\\Ayush\\.cargo\\bin"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\Intel\\WiFi\\bin\\"
-        - "C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\MinGW\\bin"
-        - "C:\\MinGW"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Ayush\\AppData\\Local\\PowerToys\\"
         - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\Antigravity\\bin"
   -
@@ -753,8 +663,6 @@ events:
       - "lib"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files (x86)/Razer Chroma SDK/bin/"
       - "C:/Program Files/Razer Chroma SDK/bin/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
@@ -789,8 +697,6 @@ events:
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/lib.exe"
     search_context:
       ENV{PATH}:
-        - "c:\\Users\\Ayush\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\Ayush\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files (x86)\\Razer Chroma SDK\\bin"
         - "C:\\Program Files\\Razer Chroma SDK\\bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
@@ -819,18 +725,6 @@ events:
         - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\Ayush\\.pyenv\\pyenv-win\\bin"
-        - "C:\\Users\\Ayush\\.pyenv\\pyenv-win\\shims"
-        - "C:\\Users\\Ayush\\.cargo\\bin"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\Intel\\WiFi\\bin\\"
-        - "C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\MinGW\\bin"
-        - "C:\\MinGW"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Ayush\\AppData\\Local\\PowerToys\\"
         - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\Antigravity\\bin"
   -
@@ -856,8 +750,6 @@ events:
     names:
       - "rc"
     candidate_directories:
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files (x86)/Razer Chroma SDK/bin/"
       - "C:/Program Files/Razer Chroma SDK/bin/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
@@ -900,12 +792,6 @@ events:
       - "C:/Program Files (x86)/PokerEngine/sbin/"
       - "C:/Program Files (x86)/PokerEngine/"
     searched_directories:
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.com"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.exe"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/rc.com"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/rc.exe"
-      - "C:/Users/Ayush/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/rc"
       - "C:/Program Files (x86)/Razer Chroma SDK/bin/rc.com"
       - "C:/Program Files (x86)/Razer Chroma SDK/bin/rc.exe"
       - "C:/Program Files (x86)/Razer Chroma SDK/bin/rc"
@@ -1032,8 +918,6 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "c:\\Users\\Ayush\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
-        - "c:\\Users\\Ayush\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files (x86)\\Razer Chroma SDK\\bin"
         - "C:\\Program Files\\Razer Chroma SDK\\bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
@@ -1062,18 +946,6 @@ events:
         - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\Ayush\\.pyenv\\pyenv-win\\bin"
-        - "C:\\Users\\Ayush\\.pyenv\\pyenv-win\\shims"
-        - "C:\\Users\\Ayush\\.cargo\\bin"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\Intel\\WiFi\\bin\\"
-        - "C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\MinGW\\bin"
-        - "C:\\MinGW"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
-        - "C:\\Users\\Ayush\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\Ayush\\AppData\\Local\\PowerToys\\"
         - "C:\\Users\\Ayush\\AppData\\Local\\Programs\\Antigravity\\bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/PokerEngine"
@@ -1091,10 +963,10 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Eng/code/Poker Bot/game-engine/build/CMakeFiles/CMakeScratch/TryCompile-zi273q"
-      binary: "D:/Eng/code/Poker Bot/game-engine/build/CMakeFiles/CMakeScratch/TryCompile-zi273q"
+      source: "D:/Eng/code/Poker Bot/game-engine/build/CMakeFiles/CMakeScratch/TryCompile-p092m1"
+      binary: "D:/Eng/code/Poker Bot/game-engine/build/CMakeFiles/CMakeScratch/TryCompile-p092m1"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -1102,39 +974,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Eng/code/Poker Bot/game-engine/build/CMakeFiles/CMakeScratch/TryCompile-zi273q'
+        Change Dir: 'D:/Eng/code/Poker Bot/game-engine/build/CMakeFiles/CMakeScratch/TryCompile-p092m1'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_dc36b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5f2f6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.11.2+c078802d4 for .NET Framework
-        Build started 06-02-2026 14:21:56.
+        Build started 20-02-2026 00:46:23.
         
-        Project "D:\\Eng\\code\\Poker Bot\\game-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zi273q\\cmTC_dc36b.vcxproj" on node 1 (default targets).
+        Project "D:\\Eng\\code\\Poker Bot\\game-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-p092m1\\cmTC_5f2f6.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Eng\\code\\Poker Bot\\game-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zi273q\\Debug\\".
-          Creating directory "cmTC_dc36b.dir\\Debug\\cmTC_dc36b.tlog\\".
+          Creating directory "D:\\Eng\\code\\Poker Bot\\game-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-p092m1\\Debug\\".
+          Creating directory "cmTC_5f2f6.dir\\Debug\\cmTC_5f2f6.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_dc36b.dir\\Debug\\cmTC_dc36b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_dc36b.dir\\Debug\\cmTC_dc36b.tlog\\unsuccessfulbuild".
+          Creating "cmTC_5f2f6.dir\\Debug\\cmTC_5f2f6.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_5f2f6.dir\\Debug\\cmTC_5f2f6.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_dc36b.dir\\Debug\\\\" /Fd"cmTC_dc36b.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_5f2f6.dir\\Debug\\\\" /Fd"cmTC_5f2f6.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_dc36b.dir\\Debug\\\\" /Fd"cmTC_dc36b.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_5f2f6.dir\\Debug\\\\" /Fd"cmTC_5f2f6.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Eng\\code\\Poker Bot\\game-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zi273q\\Debug\\cmTC_dc36b.exe" /INCREMENTAL /ILK:"cmTC_dc36b.dir\\Debug\\cmTC_dc36b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Eng/code/Poker Bot/game-engine/build/CMakeFiles/CMakeScratch/TryCompile-zi273q/Debug/cmTC_dc36b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Eng/code/Poker Bot/game-engine/build/CMakeFiles/CMakeScratch/TryCompile-zi273q/Debug/cmTC_dc36b.lib" /MACHINE:X64  /machine:x64 cmTC_dc36b.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_dc36b.vcxproj -> D:\\Eng\\code\\Poker Bot\\game-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zi273q\\Debug\\cmTC_dc36b.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Eng\\code\\Poker Bot\\game-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-p092m1\\Debug\\cmTC_5f2f6.exe" /INCREMENTAL /ILK:"cmTC_5f2f6.dir\\Debug\\cmTC_5f2f6.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Eng/code/Poker Bot/game-engine/build/CMakeFiles/CMakeScratch/TryCompile-p092m1/Debug/cmTC_5f2f6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Eng/code/Poker Bot/game-engine/build/CMakeFiles/CMakeScratch/TryCompile-p092m1/Debug/cmTC_5f2f6.lib" /MACHINE:X64  /machine:x64 cmTC_5f2f6.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_5f2f6.vcxproj -> D:\\Eng\\code\\Poker Bot\\game-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-p092m1\\Debug\\cmTC_5f2f6.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_dc36b.dir\\Debug\\cmTC_dc36b.tlog\\unsuccessfulbuild".
-          Touching "cmTC_dc36b.dir\\Debug\\cmTC_dc36b.tlog\\cmTC_dc36b.lastbuildstate".
-        Done Building Project "D:\\Eng\\code\\Poker Bot\\game-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zi273q\\cmTC_dc36b.vcxproj" (default targets).
+          Deleting file "cmTC_5f2f6.dir\\Debug\\cmTC_5f2f6.tlog\\unsuccessfulbuild".
+          Touching "cmTC_5f2f6.dir\\Debug\\cmTC_5f2f6.tlog\\cmTC_5f2f6.lastbuildstate".
+        Done Building Project "D:\\Eng\\code\\Poker Bot\\game-engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-p092m1\\cmTC_5f2f6.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.39
+        Time Elapsed 00:00:00.41
         
       exitCode: 0
   -
