@@ -1,0 +1,10 @@
+^D:\ENG\CODE\POKER BOT\GAME-ENGINE\BUILD\CMAKEFILES\2D580526237B673C262CF616EED2B3DD\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Eng/code/Poker Bot/game-engine" "-BD:/Eng/code/Poker Bot/game-engine/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/Eng/code/Poker Bot/game-engine/build/PokerEngine.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

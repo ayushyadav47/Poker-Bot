@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Eng\code\Poker Bot\game-engine\build\CMakeFiles\2d580526237b673c262cf616eed2b3dd\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{26AA0B00-D1EF-3A3F-B587-7662D45E1EB7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
