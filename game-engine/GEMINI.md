@@ -19,9 +19,23 @@ This library provides the core logic for simulating poker games, designed for fl
 
 **Build Steps:**
 
+The project uses standard CMake commands. By default, it builds the library, examples, and tests.
+
 ```bash
 cmake -S . -B build
 cmake --build build
+```
+
+**Build Options:**
+
+You can toggle components using CMake options:
+-   `BUILD_POKER_ENGINE` (Default: ON): Build the core library.
+-   `BUILD_EXAMPLES` (Default: ON): Build example executables.
+-   `BUILD_TESTING` (Default: ON): Build unit tests (requires internet to fetch GoogleTest).
+
+Example:
+```bash
+cmake -S . -B build -DBUILD_TESTING=OFF
 ```
 
 ## Running the Demo
@@ -29,25 +43,19 @@ cmake --build build
 The project includes an interactive command-line demo (`poker_demo`) where you can play against a passive bot.
 
 ```bash
-./build/poker_demo
+./build/examples/poker_demo
 ```
 
 ## Testing
 
-Unit tests are located in the `tests/` directory and utilize the **GoogleTest** framework.
+Unit tests are located in the `tests/` directory and utilize the **GoogleTest** framework. Tests are enabled by default.
 
-**Note:** The testing configuration is currently commented out in `CMakeLists.txt`.
+**To run tests:**
 
-**To enable and run tests:**
-
-1.  Open `CMakeLists.txt`.
-2.  Uncomment the testing section at the bottom of the file (lines related to `GTest` and `poker_tests`).
-3.  Ensure GoogleTest is installed or available to CMake.
-4.  Rebuild and run tests:
+1.  Build the project (ensure `BUILD_TESTING` is ON).
+2.  Run CTest:
 
 ```bash
-cmake -S . -B build
-cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
@@ -55,11 +63,11 @@ ctest --test-dir build --output-on-failure
 
 -   `src/`: Implementation of the core engine logic.
 -   `include/`: Public header files, organized by module (`core`, `engine`, `interfaces`, `utils`).
--   `examples/`: Example implementations, including the `poker_demo` CLI.
+-   `examples/`: Example implementations, including the `poker_demo.cpp` CLI.
 -   `tests/`: Unit tests for individual components (`Card`, `Deck`, `HandEvaluator`, etc.).
 
 ## Key Components
 
 -   **`PokerEngine`**: The central controller that manages the flow of the game, transitions between betting rounds, and enforces rules.
 -   **`GameState`**: A snapshot of the current game, including player statuses, pot amounts, and board cards.
--   **`IActionProvider`**: The interface you must implement to define player behavior. See `examples/main.cpp` for a reference implementation.
+-   **`IActionProvider`**: The interface you must implement to define player behavior. See `examples/poker_demo.cpp` for a reference implementation.
