@@ -10,6 +10,7 @@ target_link_libraries(gui_demo PRIVATE
     sfml-graphics
     sfml-window
     sfml-system
+    poker_engine
 )
 
 # If you want to link the PokerEngine logic later:
