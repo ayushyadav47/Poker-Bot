@@ -19,6 +19,7 @@
 #include <condition_variable>
 #include <atomic>
 #include <deque>
+#include <map>
 
 using namespace poker::core;
 using namespace poker::engine;
@@ -31,6 +32,7 @@ struct RenderState {
     bool waitingForAction = false;
     std::vector<Action> legalActions;
     size_t activePlayerId = 0;
+    float uiScale = 1.0f;
 };
 
 std::mutex stateMutex;
@@ -39,6 +41,47 @@ std::condition_variable actionCV;
 std::atomic<bool> gameRunning{true};
 Action userAction;
 bool actionReady = false;
+
+// --- Assets ---
+std::map<int, sf::Texture> cardTextures;
+sf::Texture backTexture;
+const std::string ASSETS_PATH = "examples/gui_demo/assets/Hand Drawn Cards/";
+
+void loadTextures() {
+    // Load Card Back
+    if (!backTexture.loadFromFile(ASSETS_PATH + "Back Red.png")) {
+        std::cerr << "Failed to load card back texture" << std::endl;
+    }
+
+    // Load Suits
+    const std::vector<std::pair<Suit, std::string>> suits = {
+        {Suit::Hearts, "Hearts"},
+        {Suit::Diamonds, "Diamonds"},
+        {Suit::Clubs, "Clubs"},
+        {Suit::Spades, "Spades"}
+    };
+
+    const std::vector<std::string> suitSuffixes = {"h", "d", "c", "s"};
+
+    for (int s = 0; s < 4; ++s) {
+        std::string suitName = suits[s].second;
+        std::string suffix = suitSuffixes[s];
+        
+        for (int r = 2; r <= 14; ++r) {
+            int fileRank = (r == 14) ? 1 : r;
+            std::string filename = ASSETS_PATH + suitName + "/" + std::to_string(fileRank) + suffix + ".png";
+            
+            sf::Texture tex;
+            if (!tex.loadFromFile(filename)) {
+                std::cerr << "Failed to load: " << filename << std::endl;
+            } else {
+                // Key: suit * 20 + rank
+                int key = s * 20 + r;
+                cardTextures[key] = tex;
+            }
+        }
+    }
+}
 
 // --- Helper Functions ---
 std::string formatMoney(int64_t amount) {
@@ -152,6 +195,10 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(1024, 768), "Poker Engine GUI Demo");
     window.setFramerateLimit(60);
     if (!ImGui::SFML::Init(window)) return -1;
+    
+    // Load card assets
+    void loadTextures(); // forward declaration not needed as defined above
+    loadTextures();
 
     // Start game thread
     std::thread gameThread(gameThreadFunc);
@@ -175,9 +222,17 @@ int main() {
         std::lock_guard<std::mutex> lock(stateMutex);
         const auto& gs = renderState.gs;
 
+        // Apply Global Scale
+        ImGui::GetIO().FontGlobalScale = renderState.uiScale;
+        float s = renderState.uiScale; // shorthand for sizing
+
         ImGui::SetNextWindowPos(ImVec2(0, 0));
         ImGui::SetNextWindowSize(ImVec2(window.getSize().x, window.getSize().y));
         ImGui::Begin("Poker Table", nullptr, ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove);
+        
+        // Scale Control
+        ImGui::SliderFloat("UI Scale", &renderState.uiScale, 0.5f, 3.0f);
+        ImGui::Separator();
 
         // Community Cards
         ImGui::Text("Community Cards:");
@@ -187,7 +242,12 @@ int main() {
         } else {
             for (const auto &card : gs.getCommunityCards()) {
                 ImGui::SameLine();
-                ImGui::Button(card.toString().c_str(), ImVec2(50, 70));
+                int key = (int)card.suit * 20 + (int)card.rank;
+                if (cardTextures.count(key)) {
+                    ImGui::Image(cardTextures[key], ImVec2(50 * s, 70 * s));
+                } else {
+                    ImGui::Button(card.toString().c_str(), ImVec2(50 * s, 70 * s));
+                }
             }
         }
         ImGui::NewLine();
@@ -214,7 +274,12 @@ int main() {
             ImGui::Text("Cards:");
             for (const auto &card : p0.getHoleCards()) {
                 ImGui::SameLine();
-                ImGui::Button(card.toString().c_str(), ImVec2(50, 70));
+                int key = (int)card.suit * 20 + (int)card.rank;
+                if (cardTextures.count(key)) {
+                    ImGui::Image(cardTextures[key], ImVec2(50 * s, 70 * s));
+                } else {
+                    ImGui::Button(card.toString().c_str(), ImVec2(50 * s, 70 * s));
+                }
             }
         }
         ImGui::NextColumn();
@@ -228,10 +293,21 @@ int main() {
              ImGui::Text("Cards:");
              for (const auto &card : p1.getHoleCards()) {
                 ImGui::SameLine();
-                ImGui::Button(card.toString().c_str(), ImVec2(50, 70));
+                int key = (int)card.suit * 20 + (int)card.rank;
+                if (cardTextures.count(key)) {
+                    ImGui::Image(cardTextures[key], ImVec2(50 * s, 70 * s));
+                } else {
+                    ImGui::Button(card.toString().c_str(), ImVec2(50 * s, 70 * s));
+                }
             }
         } else {
-            ImGui::Text("Cards: [X] [X]");
+            ImGui::Text("Cards:");
+            ImGui::SameLine();
+            if (backTexture.getSize().x > 0) ImGui::Image(backTexture, ImVec2(50 * s, 70 * s));
+            else ImGui::Button("[X]", ImVec2(50 * s, 70 * s));
+            ImGui::SameLine();
+            if (backTexture.getSize().x > 0) ImGui::Image(backTexture, ImVec2(50 * s, 70 * s));
+            else ImGui::Button("[X]", ImVec2(50 * s, 70 * s));
         }
         ImGui::Columns(1);
         ImGui::Separator();
@@ -265,7 +341,7 @@ int main() {
             if (betAmount > maxInput) betAmount = (int)maxInput;
             
             // Draw Fold
-            if (ImGui::Button("Fold", ImVec2(80, 40))) {
+            if (ImGui::Button("Fold", ImVec2(80 * s, 40 * s))) {
                  userAction = Action(ActionType::Fold, 0, 0);
                  actionReady = true;
                  actionCV.notify_one();
@@ -274,14 +350,14 @@ int main() {
             
             // Draw Check/Call
             if (callAmt == 0) {
-                if (ImGui::Button("Check", ImVec2(80, 40))) {
+                if (ImGui::Button("Check", ImVec2(80 * s, 40 * s))) {
                      userAction = Action(ActionType::Check, 0, 0);
                      actionReady = true;
                      actionCV.notify_one();
                 }
             } else {
                  std::string label = "Call " + std::to_string(callAmt);
-                 if (ImGui::Button(label.c_str(), ImVec2(100, 40))) {
+                 if (ImGui::Button(label.c_str(), ImVec2(100 * s, 40 * s))) {
                      userAction = Action(ActionType::Call, callAmt, 0);
                      actionReady = true;
                      actionCV.notify_one();
@@ -290,7 +366,7 @@ int main() {
             ImGui::SameLine();
 
             // Bet/Raise Input
-            ImGui::PushItemWidth(100);
+            ImGui::PushItemWidth(100 * s);
             int step = (int)renderState.gs.getBigBlind();
             int stepFast = step * 5;
             ImGui::InputInt("##betamt", &betAmount, step, stepFast);
@@ -303,14 +379,14 @@ int main() {
             ImGui::SameLine();
             if (callAmt == 0) {
                  std::string label = "Bet " + std::to_string(betAmount);
-                 if (ImGui::Button(label.c_str(), ImVec2(100, 40))) {
+                 if (ImGui::Button(label.c_str(), ImVec2(100 * s, 40 * s))) {
                       userAction = Action(ActionType::Bet, betAmount, 0);
                       actionReady = true;
                       actionCV.notify_one();
                  }
             } else {
                  std::string label = "Raise " + std::to_string(betAmount);
-                 if (ImGui::Button(label.c_str(), ImVec2(100, 40))) {
+                 if (ImGui::Button(label.c_str(), ImVec2(100 * s, 40 * s))) {
                       userAction = Action(ActionType::Raise, betAmount, 0);
                       actionReady = true;
                       actionCV.notify_one();
