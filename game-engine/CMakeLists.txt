@@ -1,56 +1,66 @@
 cmake_minimum_required(VERSION 3.20)
 project(PokerEngine VERSION 1.0.0 LANGUAGES CXX)
 
+# --- Options ---
+option(BUILD_POKER_ENGINE "Build the PokerEngine library" ON)
+option(BUILD_EXAMPLES "Build example executables" ON)
+option(BUILD_TESTING "Build unit tests" ON)
+option(BUILD_GUI "Build GUI examples with SFML and ImGui" ON)
+
+# --- Standard & Compiler Settings ---
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-# Compiler warnings
 if(MSVC)
     add_compile_options(/W4 /WX-)
 else()
     add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-# --- Static library target ---
-set(ENGINE_SOURCES
-    src/Card.cpp
-    src/Action.cpp
-    src/Deck.cpp
-    src/Player.cpp
-    src/Pot.cpp
-    src/BettingRound.cpp
-    src/GameState.cpp
-    src/HandEvaluator.cpp
-    src/RuleEngine.cpp
-    src/PokerEngine.cpp
-)
+# --- Dependencies ---
+if(BUILD_GUI)
+    include(FetchContent)
 
-add_library(poker_engine STATIC ${ENGINE_SOURCES})
-target_include_directories(poker_engine PUBLIC
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-    $<INSTALL_INTERFACE:include>
-)
+    # SFML
+    set(SFML_BUILD_AUDIO OFF CACHE BOOL "Disable SFML Audio" FORCE)
+    FetchContent_Declare(
+        sfml
+        GIT_REPOSITORY https://github.com/SFML/SFML.git
+        GIT_TAG        2.6.1
+    )
+    FetchContent_MakeAvailable(sfml)
 
-# --- Demo executable ---
-add_executable(poker_demo examples/main.cpp)
-target_link_libraries(poker_demo PRIVATE poker_engine)
+    # ImGui
+    FetchContent_Declare(
+        imgui
+        GIT_REPOSITORY https://github.com/ocornut/imgui.git
+        GIT_TAG        v1.90.4-docking
+    )
+    FetchContent_MakeAvailable(imgui)
 
-# --- Tests ---
-# Test source files are in tests/ and use GoogleTest.
-# To enable, install GoogleTest locally and uncomment below:
-#
-# find_package(GTest REQUIRED)
-# enable_testing()
-# set(TEST_SOURCES
-#     tests/test_card.cpp
-#     tests/test_deck.cpp
-#     tests/test_hand_evaluator.cpp
-#     tests/test_pot.cpp
-#     tests/test_rule_engine.cpp
-#     tests/test_poker_engine.cpp
-# )
-# add_executable(poker_tests ${TEST_SOURCES})
-# target_link_libraries(poker_tests PRIVATE poker_engine GTest::gtest_main)
-# include(GoogleTest)
-# gtest_discover_tests(poker_tests)
+    # ImGui-SFML
+    set(IMGUI_SFML_FIND_SFML OFF CACHE BOOL "Disable finding SFML" FORCE)
+    FetchContent_Declare(
+        imgui-sfml
+        GIT_REPOSITORY https://github.com/SFML/imgui-sfml.git
+        GIT_TAG        v2.6
+    )
+    set(IMGUI_DIR ${imgui_SOURCE_DIR})
+    FetchContent_MakeAvailable(imgui-sfml)
+endif()
+
+# --- Subdirectories ---
+if(BUILD_POKER_ENGINE)
+    add_subdirectory(src)
+endif()
+
+if(BUILD_EXAMPLES)
+    add_subdirectory(examples)
+endif()
+
+if(BUILD_TESTING)
+    enable_testing()
+    add_subdirectory(tests)
+endif()
